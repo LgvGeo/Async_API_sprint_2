@@ -1,3 +1,24 @@
+Тесты находятся в репозитории https://github.com/LgvGeo/ms-cinema-api  
+
+# Запуск тестов  
+
+Чтобы запустить тесты необходимо создать .env файлы в директории tests и корневой директории микросервиса с содержимым:  
+  
+для директории tests пример содержимого файла:  
+ELASTIC_HOST=elastic  
+ELASTIC_PORT=9200  
+REDIS_HOST=redis  
+REDIS_PORT=6379  
+api_url=http://api:8000  
+  
+для корневой директории пример содержимого файла: 
+ELASTIC_HOST=elastic  
+ELASTIC_PORT=9200  
+REDIS_HOST=redis  
+REDIS_PORT=6379  
+  
+После этого переходим в диреторию tests и выаолняем docker compose up --build.
+
 # Проектная работа 5 спринта
 
 В папке **tasks** ваша команда найдёт задачи, которые необходимо выполнить во втором спринте модуля "Сервис Async API".
